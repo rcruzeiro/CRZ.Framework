@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
 namespace CRZ.Framework.Cloud.AWS
@@ -17,10 +18,10 @@ namespace CRZ.Framework.Cloud.AWS
 
         public DefaultAWSConfiguration(string accountName, string secretKey, string accessKey, string defaultRegion)
         {
-            AccountName = accountName;
-            SecretKey = secretKey;
-            AccessKey = accessKey;
-            DefaultRegion = defaultRegion;
+            AccountName = accountName ?? throw new ArgumentNullException(nameof(accountName));
+            SecretKey = secretKey ?? throw new ArgumentNullException(nameof(secretKey));
+            AccessKey = accessKey ?? throw new ArgumentNullException(nameof(accessKey));
+            DefaultRegion = defaultRegion ?? throw new ArgumentNullException(nameof(defaultRegion));
         }
 
         public DefaultAWSConfiguration(IConfiguration configuration, string sectionName = "AWS")

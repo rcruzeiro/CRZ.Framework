@@ -11,7 +11,7 @@ namespace CRZ.Framework.Cloud.AWS.S3
 {
     public class S3Service : IDisposable
     {
-        readonly IAmazonS3 _client;
+        protected IAmazonS3 S3Client { get; }
 
         public S3Service(IAWSConfiguration awsConfiguration)
         {
@@ -19,7 +19,7 @@ namespace CRZ.Framework.Cloud.AWS.S3
 
             Enum.TryParse(typeof(RegionEndpoint), awsConfiguration.DefaultRegion, true, out object result);
 
-            _client = new AmazonS3Client(awsConfiguration.AccessKey, awsConfiguration.SecretKey, (RegionEndpoint)result);
+            S3Client = new AmazonS3Client(awsConfiguration.AccessKey, awsConfiguration.SecretKey, (RegionEndpoint)result);
         }
 
         public async Task<S3Response> CreateBucket(string bucketName, CancellationToken cancellationToken = default)
@@ -32,7 +32,7 @@ namespace CRZ.Framework.Cloud.AWS.S3
                     UseClientRegion = true
                 };
 
-                var awsResponse = await _client.PutBucketAsync(putBucketRequest, cancellationToken);
+                var awsResponse = await S3Client.PutBucketAsync(putBucketRequest, cancellationToken);
                 var s3Response = new S3Response
                 {
                     StatusCode = awsResponse.HttpStatusCode,
@@ -47,7 +47,7 @@ namespace CRZ.Framework.Cloud.AWS.S3
 
         async Task<bool> DoesS3BucketExist(string bucketName)
         {
-            return await AmazonS3Util.DoesS3BucketExistAsync(_client, bucketName);
+            return await AmazonS3Util.DoesS3BucketExistAsync(S3Client, bucketName);
         }
 
         public void Dispose()
@@ -60,8 +60,8 @@ namespace CRZ.Framework.Cloud.AWS.S3
         {
             if (disposing)
             {
-                if (_client != null)
-                    _client.Dispose();
+                if (S3Client != null)
+                    S3Client.Dispose();
             }
         }
     }

@@ -6,7 +6,7 @@ namespace CRZ.Framework.Cloud.AWS.Kinesis
 {
     public class KinesisService
     {
-        readonly IAmazonKinesis _client;
+        protected IAmazonKinesis KinesisClient { get; }
 
         public KinesisService(IAWSConfiguration awsConfiguration)
         {
@@ -14,7 +14,7 @@ namespace CRZ.Framework.Cloud.AWS.Kinesis
 
             Enum.TryParse(typeof(RegionEndpoint), awsConfiguration.DefaultRegion, true, out object result);
 
-            _client = new AmazonKinesisClient(awsConfiguration.AccessKey, awsConfiguration.SecretKey, (RegionEndpoint)result);
+            KinesisClient = new AmazonKinesisClient(awsConfiguration.AccessKey, awsConfiguration.SecretKey, (RegionEndpoint)result);
         }
     }
 }

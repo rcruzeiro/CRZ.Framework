@@ -1,0 +1,12 @@
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/bin/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.deps.json
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/bin/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.dll
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/bin/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.pdb
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/bin/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.dll
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/bin/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.pdb
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.csprojAssemblyReference.cache
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.csproj.CoreCompileInputs.cache
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.AssemblyInfoInputs.cache
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.AssemblyInfo.cs
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.csproj.CopyComplete
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.dll
+/Users/rafaelcruzeiro/Sites/rcruzeiro/CRZ.Framework/CRZ.Framework.Cloud.GCP.Log/obj/Debug/netcoreapp2.2/CRZ.Framework.Cloud.GCP.Log.pdb

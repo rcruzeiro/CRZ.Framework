@@ -403,3 +403,12 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+*.json
+*.dll
+*.pdb
+*.cache
+*.props
+*.targets
+*.cache
+*.CopyComplete
+*.txt

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Google.Cloud.Logging.V2" Version="2.2.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CRZ.Framework.Cloud.GCP\CRZ.Framework.Cloud.GCP.csproj" />
+    </ItemGroup>
+</Project>

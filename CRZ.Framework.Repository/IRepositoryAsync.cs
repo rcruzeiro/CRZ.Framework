@@ -7,7 +7,8 @@ using CRZ.Framework.Domain;
 namespace CRZ.Framework.Repository
 {
     public interface IRepositoryAsync<T> : IRepository<T>
-        where T : class, IAggregationRoot
+        where T : class, IAggregation
+
     {
         Task<IEnumerable<T>> GetAsync(Func<T, bool> predicate = null, CancellationToken cancellationToken = default);
 

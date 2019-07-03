@@ -10,37 +10,37 @@ namespace CRZ.Framework.Repository
         DbContext Context { get; }
 
         IEnumerable<T> Get<T>(Func<T, bool> predicate = null)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         IEnumerable<T> Get<T>(ISpecification<T> specification)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         T GetOne<T>(Func<T, bool> predicate = null)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         T GetOne<T>(ISpecification<T> specification)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         T Find<T>(params object[] keyValues)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         T Add<T>(T entity)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         void Add<T>(IEnumerable<T> entities)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         T Update<T>(T entity)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         void Update<T>(IEnumerable<T> entities)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         void Remove<T>(T entity)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         void Remove<T>(IEnumerable<T> entities)
-            where T : class, IAggregationRoot;
+            where T : class, IAggregation;
 
         int SaveChanges();
 

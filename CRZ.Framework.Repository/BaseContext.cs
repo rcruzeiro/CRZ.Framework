@@ -182,7 +182,7 @@ namespace CRZ.Framework.Repository
         }
 
         private IQueryable<T> GetSpecIQueryable<T>(ISpecification<T> spec)
-            where T : class, IAggregationRoot
+            where T : class, IAggregation
         {
             var includes = spec.Includes
                 .Aggregate(Set<T>().AsQueryable(),

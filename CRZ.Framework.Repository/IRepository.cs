@@ -5,7 +5,8 @@ using CRZ.Framework.Domain;
 namespace CRZ.Framework.Repository
 {
     public interface IRepository<T> : IDisposable
-        where T : class, IAggregationRoot
+        where T : class, IAggregation
+
     {
         IEnumerable<T> Get(Func<T, bool> predicate = null);
 

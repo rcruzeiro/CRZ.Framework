@@ -6,7 +6,7 @@ namespace CRZ.Framework.CQRS.Commands
     public interface ICommandHandlerAsync<T>
         where T : class, ICommand
     {
-        Task Execute(T command, CancellationToken cancellationToken = default);
+        Task ExecuteAsync(T command, CancellationToken cancellationToken = default);
     }
 
     public interface ICommandHandlerAsync<T, TResult>

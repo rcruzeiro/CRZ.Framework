@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <PackageId>CRZ.Framework.Repository</PackageId>
+        <PackageId>CRZ.Framework.Web.Security</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
         <PackageVersion>1.0</PackageVersion>
@@ -10,13 +10,12 @@
         <DevelopmentDependency>true</DevelopmentDependency>
         <Owners>rcruzeiro</Owners>
         <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
-        <Title>CRZ.Framework.Repository</Title>
-        <Description>Library to encapsulate repository pattern code based on Domain-Driven Design</Description>
+        <Title>CRZ.Framework.Web.Security</Title>
+        <Description>Library with JWT helper for Web API projects</Description>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\CRZ.Framework.Domain\CRZ.Framework.Domain.csproj" />
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
     </ItemGroup>
 </Project>

@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <PackageId>CRZ.Framework.Domain</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
+        <PackageVersion>1.0</PackageVersion>
+        <Authors>rcruzeiro</Authors>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <Owners>rcruzeiro</Owners>
+        <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
+        <Title>CRZ.Framework.Domain</Title>
+        <Description>Library containing interfaces for Domain main types like Entity, Value Objects, Aggregations and Specification</Description>
+        <PackOnBuild>true</PackOnBuild>
+        <Copyright>rcruzeiro</Copyright>
     </PropertyGroup>
 </Project>

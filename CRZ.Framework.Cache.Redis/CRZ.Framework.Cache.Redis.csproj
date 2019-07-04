@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <PackageId>CRZ.Framework.Cache.Redis</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
+        <PackageVersion>1.0</PackageVersion>
+        <Authors>rcruzeiro</Authors>
+        <Copyright>rcruzeiro</Copyright>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <Owners>rcruzeiro</Owners>
+        <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
+        <Title>CRZ.Framework.Cache.Redis</Title>
+        <Description>Library for supporting Redis Cache Service with StackExchange dependency</Description>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\CRZ.Framework.Cache\CRZ.Framework.Cache.csproj" />

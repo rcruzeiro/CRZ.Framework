@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Domain</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.1</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <DevelopmentDependency>true</DevelopmentDependency>
         <Owners>rcruzeiro</Owners>
@@ -13,5 +13,6 @@
         <Description>Library containing interfaces for Domain main types like Entity, Value Objects, Aggregations and Specification</Description>
         <PackOnBuild>true</PackOnBuild>
         <Copyright>rcruzeiro</Copyright>
+        <PackageReleaseNotes>Include Command as a Domain mechanism</PackageReleaseNotes>
     </PropertyGroup>
 </Project>

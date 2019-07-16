@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageId>CRZ.Framework.Repository.ADO</PackageId>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <PackageVersion>1.0</PackageVersion>
+        <Authors>rcruzeiro</Authors>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <Owners>rcruzeiro</Owners>
+        <Title>CRZ.Framework.Repository.ADO</Title>
+        <Description>Library to encapsulate repository pattern code based on Dapper</Description>
+        <Copyright>rcruzeiro</Copyright>
+        <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Dapper" Version="1.60.6" />
+    </ItemGroup>
+</Project>

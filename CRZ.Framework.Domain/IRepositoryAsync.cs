@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using CRZ.Framework.Domain;
 
-namespace CRZ.Framework.Repository
+namespace CRZ.Framework.Domain
 {
     public interface IRepositoryAsync<T> : IRepository<T>
         where T : class, IAggregation

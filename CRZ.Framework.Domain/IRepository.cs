@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using CRZ.Framework.Domain;
 
-namespace CRZ.Framework.Repository
+namespace CRZ.Framework.Domain
 {
     public interface IRepository<T> : IDisposable
         where T : class, IAggregation

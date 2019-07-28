@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Repository</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.1</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <Copyright>rcruzeiro</Copyright>
         <DevelopmentDependency>true</DevelopmentDependency>
@@ -12,11 +12,10 @@
         <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
         <Title>CRZ.Framework.Repository</Title>
         <Description>Library to encapsulate repository pattern code based on Domain-Driven Design</Description>
+        <PackageReleaseNotes>Move IRepository&lt;T&gt; and IRepositoryAsync&lt;T&gt; to CRZ.Framework.Domain library.</PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\CRZ.Framework.Domain\CRZ.Framework.Domain.csproj" />
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+        <PackageReference Include="CRZ.Framework.Domain" Version="1.2.0" />
     </ItemGroup>
 </Project>

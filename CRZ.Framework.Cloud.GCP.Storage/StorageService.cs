@@ -20,7 +20,7 @@ namespace CRZ.Framework.Cloud.GCP.Storage
 
         public async Task CreateBucket(string bucketName, CancellationToken cancellationToken = default)
         {
-            await StorageClient.CreateBucketAsync(GCPConfiguration.ProductId, bucketName, cancellationToken: cancellationToken);
+            await StorageClient.CreateBucketAsync(GCPConfiguration.ProjectId, bucketName, cancellationToken: cancellationToken);
         }
 
         public async Task DeleteBucket(string bucketName, CancellationToken cancellationToken = default)

@@ -2,7 +2,7 @@
 {
     public interface IGCPConfiguration
     {
-        string ProductId { get; }
+        string ProjectId { get; }
 
         string ComputeZone { get; }
     }

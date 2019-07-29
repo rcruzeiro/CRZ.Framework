@@ -68,7 +68,7 @@ namespace CRZ.Framework.Cloud.GCP.Log
             // Prepare new log entry.
             LogEntry entry = new LogEntry();
             var logId = id;
-            LogName logName = new LogName(GCPConfiguration.ProductId, logId);
+            LogName logName = new LogName(GCPConfiguration.ProjectId, logId);
             LogNameOneof logNameToWrite = LogNameOneof.From(logName);
             entry.LogName = logName.ToString();
             entry.Severity = severity;

@@ -8,13 +8,13 @@ namespace CRZ.Framework.Cloud.GCP
     {
         protected string SectionName { get; }
 
-        public string ProductId { get; }
+        public string ProjectId { get; }
 
         public string ComputeZone { get; }
 
         public DefaultGCPConfiguration(string productId, string computeZone)
         {
-            ProductId = productId ?? throw new ArgumentNullException(nameof(productId));
+            ProjectId = productId ?? throw new ArgumentNullException(nameof(productId));
             ComputeZone = computeZone ?? throw new ArgumentNullException(nameof(computeZone));
         }
 

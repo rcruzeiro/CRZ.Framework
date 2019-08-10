@@ -49,10 +49,5 @@ namespace CRZ.Framework.Repository.ADO
 
             return result;
         }
-
-        public async Task<int> ExecuteAsync(string sql, T param = null)
-        {
-            return await ExecuteAsync(sql, new[] { param });
-        }
     }
 }

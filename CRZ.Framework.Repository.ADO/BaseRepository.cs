@@ -51,11 +51,6 @@ namespace CRZ.Framework.Repository.ADO
             return result;
         }
 
-        public int Execute(string sql, T param = null)
-        {
-            return Execute(sql, new[] { param });
-        }
-
         public void Dispose()
         {
             Dispose(true);

@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Repository.ADO</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <DevelopmentDependency>true</DevelopmentDependency>
         <Owners>rcruzeiro</Owners>

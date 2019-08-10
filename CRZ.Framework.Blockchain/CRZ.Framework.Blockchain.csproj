@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Blockchain</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <Description>Library with Blockchain simple logic</Description>
         <Copyright>rcruzeiro</Copyright>
@@ -12,6 +12,7 @@
         <Owners>rcruzeiro</Owners>
         <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
         <Title>CRZ.Framework.Blockchain</Title>
+        <PackageReleaseNotes>Dispose SHA256</PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />

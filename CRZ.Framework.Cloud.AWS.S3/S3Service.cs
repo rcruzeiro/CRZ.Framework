@@ -47,7 +47,7 @@ namespace CRZ.Framework.Cloud.AWS.S3
 
         async Task<bool> DoesS3BucketExist(string bucketName)
         {
-            return await AmazonS3Util.DoesS3BucketExistAsync(S3Client, bucketName);
+            return await AmazonS3Util.DoesS3BucketExistV2Async(S3Client, bucketName);
         }
 
         public void Dispose()

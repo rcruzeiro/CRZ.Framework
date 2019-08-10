@@ -46,10 +46,14 @@ namespace CRZ.Framework.Blockchain
 
         protected internal string CalculateHash()
         {
-            SHA256 sHA256 = SHA256.Create();
-            byte[] input = Encoding.ASCII.GetBytes(
-                $"{Timestamp}-{PreviousHash ?? ""}-{Nonce}-{JsonConvert.SerializeObject(_data)}");
-            byte[] output = sHA256.ComputeHash(input);
+            byte[] output;
+
+            using (SHA256 sHA256 = SHA256.Create())
+            {
+                byte[] input = Encoding.ASCII.GetBytes(
+                    $"{Timestamp}-{PreviousHash ?? ""}-{Nonce}-{JsonConvert.SerializeObject(_data)}");
+                output = sHA256.ComputeHash(input);
+            }
 
             return Convert.ToBase64String(output);
         }

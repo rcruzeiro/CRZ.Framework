@@ -8,4 +8,12 @@ namespace CRZ.Framework.Domain
 
         DateTimeOffset CreatedAt { get; }
     }
+
+    public interface IValueObject<T>
+        where T : struct
+    {
+        T Id { get; }
+
+        DateTimeOffset CreatedAt { get; }
+    }
 }

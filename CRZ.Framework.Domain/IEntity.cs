@@ -10,4 +10,14 @@ namespace CRZ.Framework.Domain
 
         DateTimeOffset? UpdatedAt { get; }
     }
+
+    public interface IEntity<T>
+        where T : struct
+    {
+        T Id { get; }
+
+        DateTimeOffset CreatedAt { get; }
+
+        DateTimeOffset UpdatedAt { get; }
+    }
 }

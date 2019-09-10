@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Polly;
 using StackExchange.Redis;
 
 namespace CRZ.Framework.Cache.Redis
@@ -78,6 +81,34 @@ namespace CRZ.Framework.Cache.Redis
                 if (_redis != null)
                     _redis.Dispose();
             }
+        }
+
+        public static Task<T> GetOrSetAsync<T>(ICacheConfiguration cacheConfiguration, string key, Func<Task<T>> func, int retryCount = 1)
+            where T : class
+        {
+            return Task.Factory.StartNew(() =>
+            {
+                try
+                {
+                    return Policy.Handle<RedisException>().Retry(retryCount).Execute(() =>
+                    {
+                        using var redis = new RedisCacheService(cacheConfiguration);
+                        if (redis.Exists(key)) return redis.GetValue<T>(key);
+
+                        var task = func();
+                        task.Wait();
+                        T result = task.Result;
+
+                        redis.SetValue(key, result);
+
+                        return result;
+                    });
+                }
+                catch (RedisException)
+                {
+                    return null;
+                }
+            });
         }
     }
 }

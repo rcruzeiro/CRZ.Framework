@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Cache.Redis</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.1.0</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <Copyright>rcruzeiro</Copyright>
         <DevelopmentDependency>true</DevelopmentDependency>
@@ -12,11 +12,12 @@
         <PackageProjectUrl>https://github.com/rcruzeiro/CRZ.Framework</PackageProjectUrl>
         <Title>CRZ.Framework.Cache.Redis</Title>
         <Description>Library for supporting Redis Cache Service with StackExchange dependency</Description>
-        <PackageReleaseNotes>Fix on project references</PackageReleaseNotes>
+        <PackageReleaseNotes>Include GetOrSetAsync static method with single Retry policy (uses Polly)</PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
         <PackageReference Include="CRZ.Framework.Cache" Version="1.0.0" />
+        <PackageReference Include="Polly" Version="7.1.1" />
     </ItemGroup>
 </Project>

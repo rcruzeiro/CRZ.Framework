@@ -18,6 +18,6 @@ namespace CRZ.Framework.Domain
 
         DateTimeOffset CreatedAt { get; }
 
-        DateTimeOffset UpdatedAt { get; }
+        DateTimeOffset? UpdatedAt { get; }
     }
 }

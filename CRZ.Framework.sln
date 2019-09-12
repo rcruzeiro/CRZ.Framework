@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRZ.Framework.Repository.No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRZ.Framework.Cloud.GCP.Queue", "CRZ.Framework.Cloud.GCP.Queue\CRZ.Framework.Cloud.GCP.Queue.csproj", "{83B8FDCF-C4CA-4A15-863F-B12AE908C9C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRZ.Framework.Utils", "CRZ.Framework.Utils\CRZ.Framework.Utils.csproj", "{28D635CE-A3BC-4817-81F5-CF0AE17D33F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{83B8FDCF-C4CA-4A15-863F-B12AE908C9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B8FDCF-C4CA-4A15-863F-B12AE908C9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B8FDCF-C4CA-4A15-863F-B12AE908C9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D635CE-A3BC-4817-81F5-CF0AE17D33F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D635CE-A3BC-4817-81F5-CF0AE17D33F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D635CE-A3BC-4817-81F5-CF0AE17D33F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D635CE-A3BC-4817-81F5-CF0AE17D33F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{49332016-62B7-4DED-A759-E791B1936667} = {A3F14326-CD42-44EC-B952-47C39EC402DD}

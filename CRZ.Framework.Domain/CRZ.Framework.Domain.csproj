@@ -4,7 +4,7 @@
         <PackageId>CRZ.Framework.Domain</PackageId>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <PackageVersion>2.0.0</PackageVersion>
+        <PackageVersion>2.1.0</PackageVersion>
         <Authors>rcruzeiro</Authors>
         <DevelopmentDependency>true</DevelopmentDependency>
         <Owners>rcruzeiro</Owners>
@@ -13,6 +13,6 @@
         <Description>Library containing interfaces for Domain main types like Entity, Value Objects, Aggregations and Specification</Description>
         <PackOnBuild>true</PackOnBuild>
         <Copyright>rcruzeiro</Copyright>
-        <PackageReleaseNotes>Version compatible with .NET Standard 2.1</PackageReleaseNotes>
+        <PackageReleaseNotes>Breaking change on IAggregation interface name that now is know as IAggregationRoot</PackageReleaseNotes>
     </PropertyGroup>
 </Project>

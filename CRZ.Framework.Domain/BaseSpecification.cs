@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 namespace CRZ.Framework.Domain
 {
     public abstract class BaseSpecification<T> : ISpecification<T>
-        where T : class, IAggregation
+        where T : class, IAggregationRoot
 
     {
         public Expression<Func<T, bool>> Criteria { get; }

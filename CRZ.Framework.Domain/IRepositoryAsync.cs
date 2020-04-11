@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CRZ.Framework.Domain
 {
     public interface IRepositoryAsync<T> : IRepository<T>
-        where T : class, IAggregation
+        where T : class, IAggregationRoot
 
     {
         Task<IEnumerable<T>> GetAsync(Func<T, bool> predicate = null, CancellationToken cancellationToken = default);

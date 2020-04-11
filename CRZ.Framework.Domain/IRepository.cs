@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CRZ.Framework.Domain
 {
     public interface IRepository<T> : IDisposable
-        where T : class, IAggregation
+        where T : class, IAggregationRoot
 
     {
         IEnumerable<T> Get(Func<T, bool> predicate = null);

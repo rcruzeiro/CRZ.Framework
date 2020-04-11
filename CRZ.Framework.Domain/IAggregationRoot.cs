@@ -1,5 +1,5 @@
 ﻿namespace CRZ.Framework.Domain
 {
-    public interface IAggregation
+    public interface IAggregationRoot
     { }
 }

@@ -8,7 +8,7 @@
         <ProjectReference Include="..\CRZ.Framework.Cloud.AWS\CRZ.Framework.Cloud.AWS.csproj" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="AWSSDK.S3" Version="3.3.104.4" />
+      <PackageReference Include="AWSSDK.S3" Version="3.3.110.52" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Models\" />

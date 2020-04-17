@@ -8,6 +8,6 @@
         <ProjectReference Include="..\CRZ.Framework.Cloud.GCP\CRZ.Framework.Cloud.GCP.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Google.Cloud.Storage.V1" Version="2.3.0" />
+        <PackageReference Include="Google.Cloud.Storage.V1" Version="2.5.0" />
     </ItemGroup>
 </Project>

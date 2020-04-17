@@ -15,7 +15,7 @@
         <PackageReleaseNotes>Version compatible with .NET Standard 2.1</PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+        <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
         <PackageReference Include="CRZ.Framework.Cache" Version="2.0.*" />
         <PackageReference Include="Polly" Version="7.2.0" />

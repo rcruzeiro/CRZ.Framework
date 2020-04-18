@@ -9,25 +9,25 @@ namespace CRZ.Framework.Repository
     public interface IUnitOfWorkAsync : IUnitOfWork
     {
         Task<IEnumerable<T>> GetAsync<T>(Func<T, bool> predicate = null, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task<IEnumerable<T>> GetAsync<T>(ISpecification<T> specification, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task<T> GetOneAsync<T>(Func<T, bool> predicate = null, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task<T> GetOneAsync<T>(ISpecification<T> specification, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task<T> FindAsync<T>(object[] keyValues, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task AddAsync<T>(T entity, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task AddAsync<T>(IEnumerable<T> entities, CancellationToken cancellationToken = default)
-            where T : class, IAggregation;
+            where T : class, IAggregationRoot;
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }

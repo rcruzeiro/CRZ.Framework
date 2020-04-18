@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace CRZ.Framework.Repository
 {
     public abstract class BaseRepository<T> : IRepositoryAsync<T>
-        where T : class, IAggregation
+        where T : class, IAggregationRoot
     {
         readonly IUnitOfWorkAsync _unitOfWork;
 
